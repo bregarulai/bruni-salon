@@ -36,19 +36,18 @@ const Hero = () => {
       <div className="u-section-center">
         <div className="hero__container">
           <div className="hero__content">
-            <h1 className="heading-primary">
-              <span className="heading-primary--main">Hairstylist</span>
-              <span className="heading-primary--sub">
-                Making Wesley Chapel hair reflect their story and spirit.
-              </span>
-            </h1>
+            <h1 className="heading-primary--main">Hairstylist</h1>
+            <h2 className="heading-primary--sub">
+              Making Wesley Chapel hair reflect their story and spirit.
+            </h2>
+
             <div className="hero__logo-img-box">
               <Image fluid={logoImg} alt="Hairstylist Hair by B logo image" />
             </div>
             <AnchorLink
               to="/#contact"
               title="contact"
-              className="hero__button"
+              className="hero__button u-margin-bottom-medium u-margin-top-medium"
             />
           </div>
           <div className="hero__hero-img-box">
