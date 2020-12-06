@@ -29,6 +29,7 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-anchor-links`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
