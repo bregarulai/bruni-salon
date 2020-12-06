@@ -1,5 +1,12 @@
 .hero {
     background-color: $color-primary-light;
 
-    
+    &__button {
+        font-size: $font-default-mobile;
+        background-color: $color-primary-dark;
+        color: $color-primary-light;
+        padding: .75rem 3.5rem;
+        border-radius: 50px;
+        text-transform: uppercase;
+    }
 }

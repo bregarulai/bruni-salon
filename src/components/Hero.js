@@ -1,6 +1,7 @@
 import React from "react"
 import Image from "gatsby-image"
-import { graphql, Link, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const query = graphql`
   {
@@ -44,6 +45,11 @@ const Hero = () => {
             <div className="hero__logo-img-box">
               <Image fluid={logoImg} alt="Hairstylist Hair by B logo image" />
             </div>
+            <AnchorLink
+              to="/#contact"
+              title="contact"
+              className="hero__button"
+            />
           </div>
           <div className="hero__hero-img-box">
             <Image fluid={heroImg} alt="Hairstylist Hair by B hero image" />
