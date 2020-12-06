@@ -1,6 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby"
-import React from "react"
+import React, { useContext } from "react"
 import Image from "gatsby-image"
+import { GatsbyContext } from "../context/context"
 
 const query = graphql`
   {
@@ -21,14 +22,30 @@ const Navigation = () => {
     },
   } = useStaticQuery(query)
 
+  const { isSidebarOpen, toggleSidebar } = useContext(GatsbyContext)
+
   return (
     <header className="navigation">
       <div className="u-section-center">
-        <div className="navigation__brand">
-          <div className="navigation__img-box">
-            <Image fluid={fluid} alt="Hairstylist Hair by B logo" />
+        <div className="navigation__container">
+          <div className="navigation__brand">
+            <div className="navigation__img-box">
+              <Image fluid={fluid} alt="Hairstylist Hair by B logo" />
+            </div>
+            <p className="navigation__name">Hair by B</p>
           </div>
-          <p>Hair by B</p>
+
+          <button className="navigation__button" onClick={toggleSidebar}>
+            <span
+              className={
+                isSidebarOpen
+                  ? "navigation__icon navigation__icon--rotate"
+                  : "navigation__icon"
+              }
+            >
+              &nbsp;
+            </span>
+          </button>
         </div>
       </div>
     </header>

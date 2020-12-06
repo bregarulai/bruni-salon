@@ -2,6 +2,11 @@
     position: relative;
     margin: 2rem 0;
 
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
     &__brand {
         display: flex;
         align-items: center;
@@ -9,5 +14,72 @@
 
     &__img-box {
         width: 5rem;
+    }
+
+    &__name {
+        font-size: 3rem;
+        margin-left: .5rem;
+    }
+
+    &__button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            outline: none;
+        }
+
+        &:active {
+            outline: none;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__icon {
+        position: relative;
+
+        &,
+        &::before,
+        &::after {
+            width: 3rem;
+            height: 2px;
+            background-color: $color-primary-dark;
+            display: inline-block;
+            transition: all .2s;
+        }
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+
+        }
+
+        &::before {
+            top: -.8rem;
+        }
+
+        &::after {
+            top: .8rem;
+        }
+
+        &--rotate {
+            background-color: transparent;
+        }
+
+        &--rotate::before {
+            top: 0;
+            transform: rotate(135deg);
+        }
+
+        &--rotate::after {
+            top: 0;
+            transform: rotate(-135deg);
+        }
     }
 }
