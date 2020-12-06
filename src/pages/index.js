@@ -10,7 +10,7 @@ const IndexPage = () => {
   const hello = useContext(GatsbyContext)
   return (
     <div>
-      <p>{hello.hello}</p>
+      <p className="paragraph">{hello.hello}</p>
     </div>
   )
 }

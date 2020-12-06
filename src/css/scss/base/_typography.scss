@@ -1,0 +1,14 @@
+body {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-primary-dark;
+}
+
+.paragraph {
+    font-size: $font-default-mobile;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
