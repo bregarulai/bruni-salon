@@ -1,5 +1,14 @@
-import React from "react"
+import React, { useContext } from "react"
+import { GatsbyContext } from "../context/context"
 
-const IndexPage = () => <p>Home Page</p>
+const IndexPage = () => {
+  const hello = useContext(GatsbyContext)
+  console.log(hello)
+  return (
+    <div>
+      <p>{hello.hello}</p>
+    </div>
+  )
+}
 
 export default IndexPage
