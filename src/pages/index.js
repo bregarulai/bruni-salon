@@ -1,6 +1,7 @@
 import React, { useContext } from "react"
 import { GatsbyContext } from "../context/context"
 import { setConfig } from "react-hot-loader"
+import { Layout } from "../components"
 
 setConfig({
   showReactDomPatchNotification: false,
@@ -9,9 +10,9 @@ setConfig({
 const IndexPage = () => {
   const hello = useContext(GatsbyContext)
   return (
-    <div>
+    <Layout>
       <p className="paragraph">{hello.hello}</p>
-    </div>
+    </Layout>
   )
 }
 
