@@ -1,5 +1,4 @@
-import React, { useContext } from "react"
-import { GatsbyContext } from "../context/context"
+import React from "react"
 import { setConfig } from "react-hot-loader"
 import { Hero, Layout } from "../components"
 
