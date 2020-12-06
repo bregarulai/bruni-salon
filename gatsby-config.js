@@ -28,5 +28,13 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Montserrat\:300,400,700`, `Open Sans\:300,400,400i,700`],
+        display: "swap",
+      },
+    },
   ],
 }
