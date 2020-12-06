@@ -1,0 +1,13 @@
+.navigation {
+    position: relative;
+    margin: 2rem 0;
+
+    &__brand {
+        display: flex;
+        align-items: center;
+    }
+
+    &__img-box {
+        width: 5rem;
+    }
+}
