@@ -47,7 +47,7 @@ const Hero = () => {
             <AnchorLink
               to="/#contact"
               title="contact"
-              className="hero__button u-margin-bottom-medium u-margin-top-medium"
+              className="hero__button u-margin-bottom-medium u-margin-top-small"
             />
           </div>
           <div className="hero__hero-img-box">

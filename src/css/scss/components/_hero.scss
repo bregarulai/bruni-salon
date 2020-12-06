@@ -18,15 +18,18 @@
     &__logo-img-box {
         width: 10rem;
         grid-column: 3 / 4;
+        justify-self: end;
     }
 
     &__button {
         font-size: $font-default-mobile;
         background-color: $color-primary-dark;
         color: $color-primary-light;
-        padding: .75rem 3.5rem;
+        padding: .75rem 0;
         border-radius: 50px;
         text-transform: uppercase;
         font-weight: 700;
+        width: 20rem;
+        text-align: center;
     }
 }
