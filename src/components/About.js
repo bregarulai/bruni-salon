@@ -8,7 +8,7 @@ const About = () => {
         <h2 className="heading-tertiary u-center-text">about</h2>
         <div className="about__container">
           <div className="about__content">
-            <p className="about__text">
+            <p className="about__text u-margin-top-medium u-margin-bottom-medium">
               Put a Dominican touch to your hair in Wesley Chapel, Lutz or Tampa
               area. I am a 3rd generation of hair stylist which was born in
               Dominican Republic. I grew up in New York City graduated from Paul
