@@ -36,9 +36,14 @@ const Hero = () => {
       <div className="u-section-center">
         <div className="hero__container">
           <div className="hero__content">
-            <h1 className="heading-primary--main">Hairstylist</h1>
-            <h2 className="heading-primary--sub">
-              Making Wesley Chapel hair reflect their story and spirit.
+            <h1 className="heading-primary">
+              <span className="heading-primary--main">hair stylist</span>
+              <span className="heading-primary--sub u-margin-top-small u-margin-bottom-small">
+                dominican touch in wesley chapel and lutz area
+              </span>
+            </h1>
+            <h2 className="heading-secondary">
+              Making Wesley Chapel and Lutz hair reflect its story and spirit.
             </h2>
 
             <div className="hero__logo-img-box">

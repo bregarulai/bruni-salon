@@ -35,7 +35,11 @@ const Navigation = () => {
             <p className="navigation__name">Hair by B</p>
           </div>
 
-          <button className="navigation__button" onClick={toggleSidebar}>
+          <button
+            className="navigation__button"
+            onClick={toggleSidebar}
+            aria-label="humburger menu button"
+          >
             <span
               className={
                 isSidebarOpen
