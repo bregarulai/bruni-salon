@@ -30,7 +30,7 @@ const Navigation = () => {
         <div className="navigation__container">
           <div className="navigation__brand">
             <div className="navigation__img-box">
-              <Image fluid={fluid} alt="Hairstylist Hair by B logo" />
+              <Image fluid={fluid} alt="Hair stylist Hair by B logo" />
             </div>
             <p className="navigation__name">Hair by B</p>
           </div>

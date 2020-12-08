@@ -47,7 +47,7 @@ const Hero = () => {
             </h2>
 
             <div className="hero__logo-img-box">
-              <Image fluid={logoImg} alt="Hairstylist Hair by B logo image" />
+              <Image fluid={logoImg} alt="Hair stylist Hair by B logo image" />
             </div>
             <AnchorLink
               to="/#contact"
@@ -56,7 +56,7 @@ const Hero = () => {
             />
           </div>
           <div className="hero__hero-img-box">
-            <Image fluid={heroImg} alt="Hairstylist Hair by B hero image" />
+            <Image fluid={heroImg} alt="Hair stylist Hair by B hero image" />
           </div>
         </div>
       </div>
