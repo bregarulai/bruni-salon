@@ -49,6 +49,21 @@
         text-transform: uppercase;
     }
 
+    &__icons {
+        a {
+            color: $color-primary-light;
+            transition: scale .3s;
+
+            &:not(:last-child) {
+                margin-right: 1.5rem;
+            }
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+
     &__icon {
         font-size: 3rem;
 

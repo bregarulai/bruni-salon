@@ -65,8 +65,12 @@ const Footer = () => {
             <div className="footer__social">
               <h5 className="footer__sub-heading">social media</h5>
               <div className="footer__icons u-margin-top-small">
-                <FaInstagram className="footer__icon" />
-                <FaFacebookSquare className="footer__icon" />
+                <a href="#">
+                  <FaInstagram className="footer__icon" />
+                </a>
+                <a href="#">
+                  <FaFacebookSquare className="footer__icon" />
+                </a>
               </div>
             </div>
           </div>
