@@ -1,12 +1,21 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import ServiceCard from "./ServiceCard"
 
 const query = graphql`
   {
-    serviceColor: file(relativePath: { eq: "service-color.jpg" }) {
-      image: childImageSharp {
-        fluid(maxWidth: 300) {
-          ...GatsbyImageSharpFluid
+    services: allContentfulServiceBruni {
+      nodes {
+        id
+        title
+        altText
+        desc: childContentfulServiceBruniDescriptionTextNode {
+          description
+        }
+        image {
+          fluid {
+            ...GatsbyContentfulFluid
+          }
         }
       }
     }
@@ -15,15 +24,17 @@ const query = graphql`
 
 const Services = () => {
   const {
-    serviceColor: {
-      image: { fluid: colorImage },
-    },
+    services: { nodes },
   } = useStaticQuery(query)
   return (
     <section className="u-section services">
       <div className="u-section-center">
         <h2 className="heading-tertiary u-center-text">services</h2>
-        <div className="services__container"></div>
+        <div className="services__container">
+          {nodes.map(service => {
+            return <ServiceCard key={service.id} service={service} />
+          })}
+        </div>
       </div>
     </section>
   )

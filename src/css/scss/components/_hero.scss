@@ -19,6 +19,12 @@
         width: 10rem;
         grid-column: 3 / 4;
         justify-self: end;
+        
+    }
+
+    &__hero-img-box {
+        overflow: hidden;
+        border-radius: 4px;
     }
 
     &__button {
