@@ -1,0 +1,52 @@
+.form {
+
+    &__group:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    &__textarea,
+    &__input {
+        font-size: $font-default-mobile;
+        font-family: inherit;
+        color: inherit;
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        background-color: rgba($color-white, .5);
+        border: none;
+        width: 100%;
+        border-bottom: 3px solid transparent;
+        display: block;
+        transition: all .3s;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, .1);
+            border-bottom: 3px solid $color-pink-dark;
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid $color-primary-dark;
+        }
+
+        &::-webkit-input-placeholder {
+            color: $color-primary-dark;
+            font-weight: 300;
+        }
+    }
+
+    &__label {
+        font-size: $font-default-mobile;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        text-transform: capitalize;
+        transition: all .3s;
+    }
+
+    
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+}

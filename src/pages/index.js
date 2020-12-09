@@ -1,6 +1,6 @@
 import React from "react"
 import { setConfig } from "react-hot-loader"
-import { About, Gallery, Hero, Layout, Services } from "../components"
+import { About, Contact, Gallery, Hero, Layout, Services } from "../components"
 
 setConfig({
   showReactDomPatchNotification: false,
@@ -13,6 +13,7 @@ const IndexPage = () => {
       <About />
       <Services />
       <Gallery />
+      <Contact />
     </Layout>
   )
 }
