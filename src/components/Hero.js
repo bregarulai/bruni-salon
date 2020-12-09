@@ -32,7 +32,7 @@ const Hero = () => {
     },
   } = useStaticQuery(query)
   return (
-    <section className="u-section hero">
+    <section id="home" className="u-section hero">
       <div className="u-section-center">
         <div className="hero__container">
           <div className="hero__content">

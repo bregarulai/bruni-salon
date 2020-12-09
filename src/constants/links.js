@@ -1,7 +1,7 @@
 export default [
   {
     label: "home",
-    url: "/",
+    url: "/#home",
   },
   {
     label: "about",

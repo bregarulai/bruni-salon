@@ -3,6 +3,10 @@ import React, { useContext } from "react"
 import Image from "gatsby-image"
 import { GatsbyContext } from "../context/context"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
+import { HiCreditCard } from "react-icons/hi"
+import { SiPaypal, SiCashapp } from "react-icons/si"
+import { IoMdCash } from "react-icons/io"
+import { FaInstagram, FaFacebookSquare } from "react-icons/fa"
 
 const query = graphql`
   {
@@ -35,7 +39,7 @@ const Footer = () => {
             </div>
             <h4 className="footer__heading u-center-text">hair by b</h4>
           </div>
-          <div className="footer__links">
+          <div className="footer__links u-margin-top-medium">
             {links.map((link, index) => {
               return (
                 <AnchorLink
@@ -47,6 +51,38 @@ const Footer = () => {
                 />
               )
             })}
+          </div>
+          <div className="footer__content u-margin-top-medium">
+            <div className="footer__payments ">
+              <h5 className="footer__sub-heading">payments</h5>
+              <div className="footer__icons u-margin-top-small">
+                <IoMdCash className="footer__icon" />
+                <SiCashapp className="footer__icon" />
+                <SiPaypal className="footer__icon" />
+                <HiCreditCard className="footer__icon" />
+              </div>
+            </div>
+            <div className="footer__social">
+              <h5 className="footer__sub-heading">social media</h5>
+              <div className="footer__icons u-margin-top-small">
+                <FaInstagram className="footer__icon" />
+                <FaFacebookSquare className="footer__icon" />
+              </div>
+            </div>
+          </div>
+          <div className="footer__copyright u-margin-top-medium">
+            <p>
+              &copy; {new Date().getFullYear()} Hair Stylist Hair by B. Website
+              created by
+              <a
+                href="http://www.flavioaquino.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                &nbsp;Flavio Aquino
+              </a>
+              .
+            </p>
           </div>
         </div>
       </div>
