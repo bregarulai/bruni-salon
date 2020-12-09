@@ -36,7 +36,11 @@ const Navigation = () => {
           </div>
 
           <button
-            className="navigation__button"
+            className={
+              isMenuOpen
+                ? "navigation__button navigation__button--fixed"
+                : "navigation__button"
+            }
             onClick={toggleMenu}
             aria-label="humburger menu button"
           >

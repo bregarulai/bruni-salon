@@ -17,7 +17,9 @@ const MobileMenu = () => {
       >
         &nbsp;
       </div>
-      <nav className="menu__nav">
+      <nav
+        className={isMenuOpen ? "menu__nav menu__nav--move-right" : "menu__nav"}
+      >
         <ul className="menu__list">
           {links.map((link, index) => {
             return (
@@ -32,10 +34,10 @@ const MobileMenu = () => {
             )
           })}
           <div className="menu__social">
-            <a href="#">
+            <a href="#" className="menu__social-link">
               <FaInstagram className="menu__icon" />
             </a>
-            <a href="#">
+            <a href="#" className="menu__social-link">
               <FaFacebookSquare className="menu__icon" />
             </a>
           </div>

@@ -15,4 +15,69 @@
             animation: grow 0.8s cubic-bezier(0.83, 0, 0.17, 1) forwards;
         }
     }
+
+    &__nav {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1500;
+        opacity: 0;
+        width: 0;
+        color: $color-primary-light;
+
+        &--move-right {
+            animation: fadeRight 0.8s cubic-bezier(0.83, 0, 0.17, 1) forwards;
+        }
+    }
+
+    &__list {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+    }
+
+    &__item {
+        margin: 1rem;
+    }
+
+    &__link {
+
+        &,
+        &:link,
+        &:visited {
+            color: inherit;
+            font-size: 3rem;
+            text-transform: uppercase;
+            transition: scale .3s;
+        }
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &__icon {
+        color: $color-primary-light;
+        font-size: 5rem;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    &__social-link {
+        transition: scale .3s;
+
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
 }
