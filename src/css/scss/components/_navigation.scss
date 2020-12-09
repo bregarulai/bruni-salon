@@ -26,6 +26,7 @@
         background: transparent;
         border: none;
         cursor: pointer;
+        z-index: 2000;
 
         &:hover {
             outline: none;
@@ -76,11 +77,13 @@
         &--rotate::before {
             top: 0;
             transform: rotate(135deg);
+            background-color: red;
         }
 
         &--rotate::after {
             top: 0;
             transform: rotate(-135deg);
+            background-color: red;
         }
     }
 }

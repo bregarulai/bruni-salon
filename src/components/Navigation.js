@@ -22,7 +22,7 @@ const Navigation = () => {
     },
   } = useStaticQuery(query)
 
-  const { isSidebarOpen, toggleSidebar } = useContext(GatsbyContext)
+  const { isMenuOpen, toggleMenu } = useContext(GatsbyContext)
 
   return (
     <header className="navigation">
@@ -37,12 +37,12 @@ const Navigation = () => {
 
           <button
             className="navigation__button"
-            onClick={toggleSidebar}
+            onClick={toggleMenu}
             aria-label="humburger menu button"
           >
             <span
               className={
-                isSidebarOpen
+                isMenuOpen
                   ? "navigation__icon navigation__icon--rotate"
                   : "navigation__icon"
               }
