@@ -38,7 +38,7 @@ const Hero = () => {
           <div className="hero__content">
             <h1 className="heading-primary">
               <span className="heading-primary--main">hair stylist</span>
-              <span className="heading-primary--sub u-margin-top-small u-margin-bottom-small">
+              <span className="heading-primary--sub u-margin-bottom-small">
                 dominican touch in wesley chapel and lutz area
               </span>
             </h1>
