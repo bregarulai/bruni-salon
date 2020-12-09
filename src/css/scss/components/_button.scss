@@ -31,4 +31,10 @@
         background-color: $color-primary-dark;
         color: $color-primary-light;
     }
+
+    &--submit {
+        &:focus {
+            outline: none;
+        }
+    }
 }
