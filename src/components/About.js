@@ -3,7 +3,7 @@ import aboutImg from "../images/about.svg"
 
 const About = () => {
   return (
-    <section className="u-section about">
+    <section id="about" className="u-section about">
       <div className="u-section-center">
         <h2 className="heading-tertiary u-center-text">about</h2>
         <div className="about__container">
