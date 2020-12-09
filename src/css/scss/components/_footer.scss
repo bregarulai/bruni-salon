@@ -11,4 +11,26 @@
         width: 15rem;
         margin: 0 auto;
     }
+
+    &__links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__link {
+
+        &,
+        &:link,
+        &:visited {
+            color: $color-primary-light;
+            font-size: $font-default-mobile;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+        }
+    }
 }
