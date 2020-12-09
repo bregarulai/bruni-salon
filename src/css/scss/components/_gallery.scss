@@ -1,8 +1,17 @@
-.services {
+.gallery {
+    background-color: $color-primary-light;
+    z-index: -3;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+
     &__img-box {
         position: relative;
         width: 97%;
-        
+
         &::after {
             content: '';
             position: absolute;
@@ -18,5 +27,6 @@
 
     &__img {
         border-radius: 4px;
+        height: 100%;
     }
 }
