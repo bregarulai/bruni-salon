@@ -37,7 +37,7 @@ const Hero = () => {
         <div className="hero__container">
           <h1 className="heading-primary">
             <span className="heading-primary--main">hair stylist</span>
-            <span className="heading-primary--sub u-margin-bottom-small">
+            <span className="heading-primary--sub ">
               dominican touch in wesley chapel and lutz area
             </span>
           </h1>
@@ -51,7 +51,7 @@ const Hero = () => {
           <AnchorLink
             to="/#contact"
             title="contact"
-            className="btn btn--primary u-margin-bottom-medium u-margin-top-small"
+            className="btn btn--primary"
             stripHash
           />
 
