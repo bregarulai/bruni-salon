@@ -1,5 +1,15 @@
 .about {
 
+    &__container {
+
+        @media screen and(min-width: 900px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 5rem;
+            gap: 2rem;
+        }
+    }
+
     &__content {
         max-width: 60rem;
         margin: 0 auto;
@@ -9,5 +19,9 @@
         padding-top: 2rem;
         max-width: 60rem;
         margin: 0 auto;
+
+        @media screen and(min-width: 900px) {
+            align-self: center;
+        }
     }
 }
