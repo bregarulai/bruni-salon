@@ -1,6 +1,13 @@
 .about {
 
+    &__content {
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+
     &__img-box {
         padding-top: 2rem;
+        max-width: 60rem;
+        margin: 0 auto;
     }
 }

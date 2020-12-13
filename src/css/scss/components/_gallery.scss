@@ -11,6 +11,8 @@
     &__img-box {
         position: relative;
         width: 97%;
+        max-width: 60rem;
+        margin: 0 auto;
 
         &::after {
             content: '';
