@@ -2,6 +2,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import React, { useContext } from "react"
 import Image from "gatsby-image"
 import { GatsbyContext } from "../context/context"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const query = graphql`
   {
@@ -22,7 +23,7 @@ const Navigation = () => {
     },
   } = useStaticQuery(query)
 
-  const { isMenuOpen, toggleMenu } = useContext(GatsbyContext)
+  const { isMenuOpen, toggleMenu, links } = useContext(GatsbyContext)
 
   return (
     <header className="navigation">
@@ -34,7 +35,20 @@ const Navigation = () => {
             </div>
             <p className="navigation__name">Hair by B</p>
           </div>
-
+          <div className="navigation__links">
+            {links.map((link, index) => {
+              const { url, label } = link
+              return (
+                <AnchorLink
+                  key={index}
+                  to={url}
+                  title={label}
+                  className="navigation__link"
+                  stripHash
+                />
+              )
+            })}
+          </div>
           <button
             className={
               isMenuOpen
