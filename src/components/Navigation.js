@@ -3,6 +3,7 @@ import React, { useContext } from "react"
 import Image from "gatsby-image"
 import { GatsbyContext } from "../context/context"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
+import { FaFacebookSquare, FaInstagram } from "react-icons/fa"
 
 const query = graphql`
   {
@@ -48,6 +49,14 @@ const Navigation = () => {
                 />
               )
             })}
+          </div>
+          <div className="navigation__social-links">
+            <a href="#" className="navigation__social-link">
+              <FaInstagram className="navigation__icon" />
+            </a>
+            <a href="#" className="navigation__social-link">
+              <FaFacebookSquare className="navigation__icon" />
+            </a>
           </div>
           <button
             className={

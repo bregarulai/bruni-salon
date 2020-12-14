@@ -62,7 +62,13 @@
 
     &__icon {
         color: $color-primary-light;
-        font-size: 5rem;
+        
+        &,
+        &::before,
+        &::after {
+            width: 5rem;
+            height: 5rem;
+        }
 
         &:not(:last-child) {
             margin-right: 2rem;
@@ -70,7 +76,7 @@
     }
 
     &__social-link {
-        transition: scale .3s;
+        transition: transform .3s;
 
         &:not(:last-child) {
             margin-right: 3rem;
