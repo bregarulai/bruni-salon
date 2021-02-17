@@ -19,9 +19,9 @@
     }
 
     &__card {
-
+        margin: 5rem 0;
         @media screen and(min-width: 900px) {
-            margin: 5rem 0;
+            margin: 10rem 0;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 2rem;

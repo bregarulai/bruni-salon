@@ -33,6 +33,10 @@
             color: $color-primary-dark;
             font-weight: 300;
         }
+
+        @media screen and(min-width: 900px) {
+            font-size: 2rem;
+        }
     }
 
     &__label {
@@ -42,6 +46,10 @@
         display: block;
         text-transform: capitalize;
         transition: all .3s;
+
+        @media screen and(min-width: 900px) {
+            font-size: 2rem;
+        }
     }
 
     

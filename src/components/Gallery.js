@@ -29,7 +29,9 @@ const Gallery = () => {
   return (
     <section className="u-section gallery">
       <div className="u-section-center">
-        <h2 className="heading-tertiary u-center-text">gallery</h2>
+        <h2 className="heading-tertiary gallery__title u-center-text">
+          gallery
+        </h2>
         <div className="gallery__container u-margin-top-medium u-margin-bottom-medium">
           {images.map(image => {
             return (

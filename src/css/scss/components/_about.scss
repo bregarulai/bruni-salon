@@ -1,5 +1,10 @@
 .about {
 
+    @media screen and(min-width: 900px) {
+        margin: 5rem auto
+    }
+
+
     &__container {
 
         @media screen and(min-width: 900px) {
